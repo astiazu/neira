@@ -70,7 +70,7 @@ h2 {
 
 h3 {
     font-size: 21px;
-    color: #ff6f00;
+    color: #91ff00;
 }
 
 h4 {
@@ -171,7 +171,8 @@ ul, ol {
     right: 0;
     bottom: 0;
     opacity: .8;
-    background: #1C1D21;
+    /* background: #1C1D21; */
+    background: transparent;
 }
 
 
@@ -1344,7 +1345,7 @@ header {
 #aside .widget-search .search-btn {
     position: absolute;
     right: 0px;
-	  bottom: 0px;
+	bottom: 0px;
     width: 40px;
     height: 40px;
     border: none;
@@ -1435,7 +1436,7 @@ header {
 /*NEWS CARD */
 .news-card {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
     grid-auto-rows: minmax(100px, auto);
     margin: auto;    
@@ -1461,7 +1462,7 @@ header {
 }
 
 .contact-form {
-    text-align: center;
+    text-align: left;
     margin-top: 40px;
 }
 
@@ -1785,3 +1786,26 @@ header {
             transform:scale(0);
   }
 }
+
+.modal-contenido{
+    background-color:aqua;
+    width:300px;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+  }
+  .modal{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+  }
+  #miModal:target{
+    opacity:1;
+    pointer-events:auto;
+  }
